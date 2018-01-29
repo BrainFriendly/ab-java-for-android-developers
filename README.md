@@ -3,8 +3,8 @@ Android Bootcamp - Java for Android Developers
 
 ## Lesson 1 (3h)
 
-- Entorno de desarrollo 
+- Java Development environment (Entorno de desarrollo para Java)
 
-- Language Fundamentals
+- Language Fundamentals (Fundamentos del lenguaje Java)
 
-- OOP
+- OOP (Programación Orientada a objetos)
