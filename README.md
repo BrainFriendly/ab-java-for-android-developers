@@ -32,3 +32,5 @@ Android Bootcamp - Java for Android Developers
 - Sublime text https://www.sublimetext.com/
 
 - Google Java Style Guide https://google.github.io/styleguide/javaguide.html
+
+- Books Android Developers http://fragmentedpodcast.com/tag/books/
