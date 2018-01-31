@@ -1,37 +1,34 @@
-# ab-Java-for-Android-Developers
-Java for Android Developers (10h)
- 
-## Programación orientada a Objetos POO (2h)
+# Programación orientada a Objetos POO (2h)
 
- - ####Conceptos básicos:
+ ## Conceptos básicos:
 
   a. Qué es POO?
-
 	Programación Orientada a Objetos (POO) es un paradigma de programacion en donde se modela la data en objetos los cuales tienen un estado y un comportamiento.
 	 
-	b. Qué es una clase?
+b. Qué es una clase?
 
-	Una clase es la representacion del estado y comportamiento de un objeto.
+Una clase es la representacion del estado y comportamiento de un objeto.
 
-	c. Qué es un objeto?
+c. Qué es un objeto?
 
-	Es una instancia de una clase.
+Es una instancia de una clase.
 
-	d. Qué es un metodo?
+d. Qué es un metodo?
 
-	Un método es una "funcion" que define el comportamiento del objeto. Este puede modificar las propiedades (estado) del objeto o puede generar un nuevo evento con un mensaje para otro objeto del sistema.
+Un método es una "funcion" que define el comportamiento del objeto. Este puede modificar las propiedades (estado) del objeto o puede generar un nuevo evento con un mensaje para otro objeto del sistema.
 
-	e. Qué es una propiedad?
+e. Qué es una propiedad?
 
-	Son los "campos" que definen el estado del objeto.
+Son los "campos" que definen el estado del objeto.
 
-	f. Qué es un evento?
+f. Qué es un evento?
 
-	Es un suceso del sistema (interacción del usuario o mensaje enviado por algún otro objeto) el cual es manejado por este y derivado al objeto pertinente.
+Es un suceso del sistema (interacción del usuario o mensaje enviado por algún otro objeto) el cual es manejado por este y derivado al objeto pertinente.
 
- - ####Ejemplo:
+ ### Ejemplo:
 
 
+```java		
 		public class Persona {
 
 			private String name;
@@ -89,20 +86,22 @@ Java for Android Developers (10h)
 		        this.alive = alive;
 		    }
 		}
+```
 	
 
 
-  Como instanciar una clase? 
+  **Como instanciar una clase?** 
 
   Persona persona = **new** Persona();
 
 
- - ####Caracteristicas de POO
+ ## Caracteristicas de POO
 
-   a. Herencia: 
+   a. **Herencia**: 
      POO permite que clases hereden el comportamiento y estado de otras clases. En Java solo se permite heredar de una clase.
 
 
+```java
 	     public class Trabajador extends Persona{
 	    
 		    private String id;
@@ -124,10 +123,12 @@ Java for Android Developers (10h)
 		        this.tutorName = tutorName;
 		    }
 		 }
+```
 
-   b. Polimorfismo:
+   b. **Polimorfismo**:
 	  El polimorfismo permite que comportamientos diferentes asociados a objetos distintos puedan llevar el mismo nombre. 
    
+```java
 		public abstract class Trabajador extends Persona {
 		
 		    private String id;
@@ -169,21 +170,21 @@ Java for Android Developers (10h)
 		        System.out.println("Estoy limpiando!!");
 		    }
 		}
-		
-   c. Encapsulación: 
+```
+   c. **Encapsulación**: 
    Significa reunir todas los elementos que podrian considerarse parte de una misma entidad y ponerlos a un mismo nivel de abstracción.
 
-   d. Abstracción: 
+   d. **Abstracción**: 
    Abstrae el cómo del qué. Cada objeto puede realizar su función sin revelar cómo lo hace. De esta manera la parte que invoca al objeto no tiene que preocuparse por cómo hará su trabajo.
    
 
- - ####Modificadores de acceso
-Un modificador de acceso es una palabra restringida que restringe la privacidad del componente al que precede.
+## Modificadores de acceso
+Un modificador de acceso es una palabra clave que restringe la privacidad del componente al que precede.
 En Java tenemos los siguientes modificadores de acceso:
 
 	![Access Modifiers](https://github.com/BrainFriendly/ab-java-for-android-developers/blob/Lesson2-POO_Patterns/images/AccessModifiers.png)
 
-  Otros modificadores:
+  **Otros modificadores**:
   
 	Native: Indica que un método esta escrito en un lenguaje distinto a Java (C o C++ por ejemplo)
 
@@ -198,7 +199,7 @@ En Java tenemos los siguientes modificadores de acceso:
 	Final: Si precede a una variable indica que el valor de esta no se puede modificar, si precede a un método indica que este no se puede sobreescribir y si precede a una clase indica que la clase no se puede extender.
 	
   
- - ####Ejercicios
+  ### Ejercicios
 
 
  	Un objeto tiene ___ y ___. 
