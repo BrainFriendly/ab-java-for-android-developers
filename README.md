@@ -1,189 +1,188 @@
-# ab-Java-for-Android-Developers
-Java for Android Developers (10h)
- 
-## Programación orientada a Objetos POO (2h)
+# Programación orientada a Objetos POO (2h)
 
- - ####Conceptos básicos:
+ ## Conceptos básicos:
 
   a. Qué es POO?
-
 	Programación Orientada a Objetos (POO) es un paradigma de programacion en donde se modela la data en objetos los cuales tienen un estado y un comportamiento.
 	 
-	b. Qué es una clase?
+b. Qué es una clase?
 
-	Una clase es la representacion del estado y comportamiento de un objeto.
+Una clase es la representacion del estado y comportamiento de un objeto.
 
-	c. Qué es un objeto?
+c. Qué es un objeto?
 
-	Es una instancia de una clase.
+Es una instancia de una clase.
 
-	d. Qué es un metodo?
+d. Qué es un metodo?
 
-	Un método es una "funcion" que define el comportamiento del objeto. Este puede modificar las propiedades (estado) del objeto o puede generar un nuevo evento con un mensaje para otro objeto del sistema.
+Un método es una "funcion" que define el comportamiento del objeto. Este puede modificar las propiedades (estado) del objeto o puede generar un nuevo evento con un mensaje para otro objeto del sistema.
 
-	e. Qué es una propiedad?
+e. Qué es una propiedad?
 
-	Son los "campos" que definen el estado del objeto.
+Son los "campos" que definen el estado del objeto.
 
-	f. Qué es un evento?
+f. Qué es un evento?
 
-	Es un suceso del sistema (interacción del usuario o mensaje enviado por algún otro objeto) el cual es manejado por este y derivado al objeto pertinente.
+Es un suceso del sistema (interacción del usuario o mensaje enviado por algún otro objeto) el cual es manejado por este y derivado al objeto pertinente.
 
- - ####Ejemplo:
+ ### Ejemplo:
 
 
-		public class Persona {
+```java		
+public class Persona {
 
-			private String name;
-		    private String lastname;
-		    private Date birthdate;
-		    private int age;
-		    private Double height;
-		    private boolean alive;
+	private String name;
+	private String lastname;
+	private Date birthdate;
+	private int age;
+	private Double height;
+	private boolean alive;
 
-		    public String getName() {
-		        return name;
-		    }
+	public String getName() {
+	    return name;
+	}
 
-		    public void setName(String name) {
-		        this.name = name;
-		    }
+	public void setName(String name) {
+	    this.name = name;
+	}
 
-		    public String getLastname() {
-		        return lastname;
-		    }
+	public String getLastname() {
+	    return lastname;
+	}
 
-		    public void setLastname(String lastname) {
-		        this.lastname = lastname;
-		    }
+	public void setLastname(String lastname) {
+	    this.lastname = lastname;
+	}
 
-		    public Date getBirthdate() {
-		        return birthdate;
-		    }
+	public Date getBirthdate() {
+	    return birthdate;
+	}
 
-		    public void setBirthdate(Date birthdate) {
-		        this.birthdate = birthdate;
-		    }
+	public void setBirthdate(Date birthdate) {
+	    this.birthdate = birthdate;
+	}
 
-		    public int getAge() {
-		        return age;
-		    }
+	public int getAge() {
+	    return age;
+	}
 
-		    public void setAge(int age) {
-		        this.age = age;
-		    }
+	public void setAge(int age) {
+	    this.age = age;
+	}
 
-		    public Double getHeight() {
-		        return height;
-		    }
+	public Double getHeight() {
+	    return height;
+	}
 
-		    public void setHeight(Double height) {
-		        this.height = height;
-		    }
+	public void setHeight(Double height) {
+	    this.height = height;
+	}
 
-		    public boolean isAlive() {
-		        return alive;
-		    }
+	public boolean isAlive() {
+	    return alive;
+	}
 
-		    public void setAlive(boolean alive) {
-		        this.alive = alive;
-		    }
-		}
+	public void setAlive(boolean alive) {
+	    this.alive = alive;
+	}
+}
+```
 	
 
 
-  Como instanciar una clase? 
+  **Como instanciar una clase?** 
 
   Persona persona = **new** Persona();
 
 
- - ####Caracteristicas de POO
+ ## Caracteristicas de POO
 
-   a. Herencia: 
+   a. **Herencia**: 
      POO permite que clases hereden el comportamiento y estado de otras clases. En Java solo se permite heredar de una clase.
 
 
-	     public class Trabajador extends Persona{
+```java
+public class Trabajador extends Persona{
 	    
-		    private String id;
-		    private String tutorName;
+	private String id;
+	private String tutorName;
 
-		    public String getId() {
-		        return id;
-		    }
+	public String getId() {
+	    return id;
+	}
 
-		    public void setId(String id) {
-		        this.id = id;
-		    }
+	public void setId(String id) {
+	    this.id = id;
+	}
 
-		    public String getTutorName() {
-		        return tutorName;
-		    }
+	public String getTutorName() {
+	    return tutorName;
+	}
 
-		    public void setTutorName(String tutorName) {
-		        this.tutorName = tutorName;
-		    }
-		 }
+	public void setTutorName(String tutorName) {
+	    this.tutorName = tutorName;
+	}
+}
+```
 
-   b. Polimorfismo:
+   b. **Polimorfismo**:
 	  El polimorfismo permite que comportamientos diferentes asociados a objetos distintos puedan llevar el mismo nombre. 
    
-		public abstract class Trabajador extends Persona {
+```java
+public abstract class Trabajador extends Persona {
 		
-		    private String id;
-		    private String tutorName;
+	private String id;
+	private String tutorName;
 		
-		    public String getId() {
-		        return id;
-		    }
+	public String getId() {
+	    return id;
+	}
 		
-		    public void setId(String id) {
-		        this.id = id;
-		    }
+	public void setId(String id) {
+	    this.id = id;
+	}
 		
-		    public String getTutorName() {
-		        return tutorName;
-		    }
+	public String getTutorName() {
+	    return tutorName;
+	}
 		
-		    public void setTutorName(String tutorName) {
-		        this.tutorName = tutorName;
-		    }
+	public void setTutorName(String tutorName) {
+	    this.tutorName = tutorName;
+	}
 		
-		    public abstract void trabajar();
+	public abstract void trabajar();
 		    
-			}
+}
 
+public class TrabajadorCocina extends Trabaj	
+    @Override
+    public void trabajar() {
+        System.out.println("Estoy cocinando!!");
+    }
+}
 
-
-		public class TrabajadorCocina extends Trabajador{
-		
-		    @Override
-		    public void trabajar() {
-		        System.out.println("Estoy cocinando!!");
-		    }
-		}
-
-		public class TrabajadorLimpieza extends Trabajador {
-		    @Override
-		    public void trabajar() {
-		        System.out.println("Estoy limpiando!!");
-		    }
-		}
-		
-   c. Encapsulación: 
+public class TrabajadorLimpieza extends Trabajador {
+    @Override
+    public void trabajar() {
+        System.out.println("Estoy limpiando!!");
+    }
+}
+	
+```
+   c. **Encapsulación**: 
    Significa reunir todas los elementos que podrian considerarse parte de una misma entidad y ponerlos a un mismo nivel de abstracción.
 
-   d. Abstracción: 
+   d. **Abstracción**: 
    Abstrae el cómo del qué. Cada objeto puede realizar su función sin revelar cómo lo hace. De esta manera la parte que invoca al objeto no tiene que preocuparse por cómo hará su trabajo.
    
 
- - ####Modificadores de acceso
-Un modificador de acceso es una palabra restringida que restringe la privacidad del componente al que precede.
+## Modificadores de acceso
+Un modificador de acceso es una palabra clave que restringe la privacidad del componente al que precede.
 En Java tenemos los siguientes modificadores de acceso:
 
-	![Access Modifiers](https://github.com/BrainFriendly/ab-java-for-android-developers/blob/Lesson2-POO_Patterns/images/AccessModifiers.png)
-
-  Otros modificadores:
+![Access Modifiers](https://github.com/BrainFriendly/ab-java-for-android-developers/blob/Lesson2-POO_Patterns/images/AccessModifiers.png)
+	
+  **Otros modificadores**:
   
 	Native: Indica que un método esta escrito en un lenguaje distinto a Java (C o C++ por ejemplo)
 
@@ -198,7 +197,7 @@ En Java tenemos los siguientes modificadores de acceso:
 	Final: Si precede a una variable indica que el valor de esta no se puede modificar, si precede a un método indica que este no se puede sobreescribir y si precede a una clase indica que la clase no se puede extender.
 	
   
- - ####Ejercicios
+  ### Ejercicios
 
 
  	Un objeto tiene ___ y ___. 
