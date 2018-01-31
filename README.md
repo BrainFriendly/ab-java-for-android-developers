@@ -31,61 +31,61 @@ Es un suceso del sistema (interacción del usuario o mensaje enviado por algún 
 ```java		
 		public class Persona {
 
-			private String name;
-		    private String lastname;
-		    private Date birthdate;
-		    private int age;
-		    private Double height;
-		    private boolean alive;
+	private String name;
+	private String lastname;
+	private Date birthdate;
+	private int age;
+	private Double height;
+	private boolean alive;
 
-		    public String getName() {
-		        return name;
-		    }
+	public String getName() {
+	    return name;
+	}
 
-		    public void setName(String name) {
-		        this.name = name;
-		    }
+	public void setName(String name) {
+	    this.name = name;
+	}
 
-		    public String getLastname() {
-		        return lastname;
-		    }
+	public String getLastname() {
+	    return lastname;
+	}
 
-		    public void setLastname(String lastname) {
-		        this.lastname = lastname;
-		    }
+	public void setLastname(String lastname) {
+	    this.lastname = lastname;
+	}
 
-		    public Date getBirthdate() {
-		        return birthdate;
-		    }
+	public Date getBirthdate() {
+	    return birthdate;
+	}
 
-		    public void setBirthdate(Date birthdate) {
-		        this.birthdate = birthdate;
-		    }
+	public void setBirthdate(Date birthdate) {
+	    this.birthdate = birthdate;
+	}
 
-		    public int getAge() {
-		        return age;
-		    }
+	public int getAge() {
+	    return age;
+	}
 
-		    public void setAge(int age) {
-		        this.age = age;
-		    }
+	public void setAge(int age) {
+	    this.age = age;
+	}
 
-		    public Double getHeight() {
-		        return height;
-		    }
+	public Double getHeight() {
+	    return height;
+	}
 
-		    public void setHeight(Double height) {
-		        this.height = height;
-		    }
+	public void setHeight(Double height) {
+	    this.height = height;
+	}
 
-		    public boolean isAlive() {
-		        return alive;
-		    }
+	public boolean isAlive() {
+	    return alive;
+	}
 
-		    public void setAlive(boolean alive) {
-		        this.alive = alive;
-		    }
-		}
+	public void setAlive(boolean alive) {
+	    this.alive = alive;
+	}
+}
 ```
 	
 
@@ -102,27 +102,27 @@ Es un suceso del sistema (interacción del usuario o mensaje enviado por algún 
 
 
 ```java
-	     public class Trabajador extends Persona{
+public class Trabajador extends Persona{
 	    
-		    private String id;
-		    private String tutorName;
+	private String id;
+	private String tutorName;
 
-		    public String getId() {
-		        return id;
-		    }
+	public String getId() {
+	    return id;
+	}
 
-		    public void setId(String id) {
-		        this.id = id;
-		    }
+	public void setId(String id) {
+	    this.id = id;
+	}
 
-		    public String getTutorName() {
-		        return tutorName;
-		    }
+	public String getTutorName() {
+	    return tutorName;
+	}
 
-		    public void setTutorName(String tutorName) {
-		        this.tutorName = tutorName;
-		    }
-		 }
+	public void setTutorName(String tutorName) {
+	    this.tutorName = tutorName;
+	}
+}
 ```
 
    b. **Polimorfismo**:
@@ -131,45 +131,43 @@ Es un suceso del sistema (interacción del usuario o mensaje enviado por algún 
 ```java
 		public abstract class Trabajador extends Persona {
 		
-		    private String id;
-		    private String tutorName;
+	private String id;
+	private String tutorName;
 		
-		    public String getId() {
-		        return id;
-		    }
+	public String getId() {
+	    return id;
+	}
 		
-		    public void setId(String id) {
-		        this.id = id;
-		    }
+	public void setId(String id) {
+	    this.id = id;
+	}
 		
-		    public String getTutorName() {
-		        return tutorName;
-		    }
+	public String getTutorName() {
+	    return tutorName;
+	}
 		
-		    public void setTutorName(String tutorName) {
-		        this.tutorName = tutorName;
-		    }
+	public void setTutorName(String tutorName) {
+	    this.tutorName = tutorName;
+	}
 		
-		    public abstract void trabajar();
+	public abstract void trabajar();
 		    
-			}
+}
 
+public class TrabajadorCocina extends Trabaj	
+    @Override
+    public void trabajar() {
+        System.out.println("Estoy cocinando!!");
+    }
+}
 
-
-		public class TrabajadorCocina extends Trabajador{
-		
-		    @Override
-		    public void trabajar() {
-		        System.out.println("Estoy cocinando!!");
-		    }
-		}
-
-		public class TrabajadorLimpieza extends Trabajador {
-		    @Override
-		    public void trabajar() {
-		        System.out.println("Estoy limpiando!!");
-		    }
-		}
+public class TrabajadorLimpieza extends Trabajador {
+    @Override
+    public void trabajar() {
+        System.out.println("Estoy limpiando!!");
+    }
+}
+	
 ```
    c. **Encapsulación**: 
    Significa reunir todas los elementos que podrian considerarse parte de una misma entidad y ponerlos a un mismo nivel de abstracción.
