@@ -29,7 +29,7 @@ Es un suceso del sistema (interacción del usuario o mensaje enviado por algún 
 
 
 ```java		
-public class Persona {
+		public class Persona {
 
 	private String name;
 	private String lastname;
@@ -129,7 +129,7 @@ public class Trabajador extends Persona{
 	  El polimorfismo permite que comportamientos diferentes asociados a objetos distintos puedan llevar el mismo nombre. 
    
 ```java
-public abstract class Trabajador extends Persona {
+		public abstract class Trabajador extends Persona {
 		
 	private String id;
 	private String tutorName;
@@ -180,8 +180,8 @@ public class TrabajadorLimpieza extends Trabajador {
 Un modificador de acceso es una palabra clave que restringe la privacidad del componente al que precede.
 En Java tenemos los siguientes modificadores de acceso:
 
-	![Access Modifiers](https://github.com/BrainFriendly/ab-java-for-android-developers/blob/Lesson2-POO_Patterns/images/AccessModifiers.png)
-
+![Access Modifiers](https://github.com/BrainFriendly/ab-java-for-android-developers/blob/Lesson2-POO_Patterns/images/AccessModifiers.png)
+	
   **Otros modificadores**:
   
 	Native: Indica que un método esta escrito en un lenguaje distinto a Java (C o C++ por ejemplo)
