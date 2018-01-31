@@ -29,7 +29,7 @@ Es un suceso del sistema (interacción del usuario o mensaje enviado por algún 
 
 
 ```java		
-		public class Persona {
+public class Persona {
 
 	private String name;
 	private String lastname;
@@ -129,7 +129,7 @@ public class Trabajador extends Persona{
 	  El polimorfismo permite que comportamientos diferentes asociados a objetos distintos puedan llevar el mismo nombre. 
    
 ```java
-		public abstract class Trabajador extends Persona {
+public abstract class Trabajador extends Persona {
 		
 	private String id;
 	private String tutorName;
