@@ -19,10 +19,10 @@ Se divide en 3 grupos :
 ## Patrones :
  
  - **Comportamiento**
- 
-   * Command
    
    * Observer
+ 
+   * Command
    
    * State
    
@@ -36,19 +36,19 @@ Se divide en 3 grupos :
  
    * [Factory](https://github.com/BrainFriendly/ab-java-for-android-developers/blob/Lesson3-DesignPatterns/doc/FactoryPattern.md)
    
-   * Abstract Factory
-   
    * [Singleton](https://github.com/BrainFriendly/ab-java-for-android-developers/blob/Lesson3-DesignPatterns/doc/SingletonPattern.md)
    
    * [Builder](https://github.com/BrainFriendly/ab-java-for-android-developers/blob/Lesson3-DesignPatterns/doc/BuilderPattern.md)
+   
+   * Abstract Factory
    
 - **Estructura**
 
    * [Decorator](https://github.com/BrainFriendly/ab-java-for-android-developers/blob/Lesson3-DesignPatterns/doc/DecoratorPattern.md)
    
-   * Facade
-   
    * [Adapter](https://github.com/BrainFriendly/ab-java-for-android-developers/blob/Lesson3-DesignPatterns/doc/AdapterPattern.md)
+   
+   * Facade
    
    * Composite
    
