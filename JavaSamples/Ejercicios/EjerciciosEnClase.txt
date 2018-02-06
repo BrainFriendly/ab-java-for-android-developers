@@ -1,0 +1,59 @@
+1. 
+Dado un año, retornar el siglo en el cual se encuentra. El primer siglo empieza en el año 1 y termina en el 100 (incluye). El segundo siglo comienza en el 101 incluyendo el 200, etc.
+
+Ejemplo
+
+Para el año = 1905, el resultado deberia ser
+centuryFromYear(year) = 20;
+Para el año = 1700, el resultado deberia ser
+centuryFromYear(year) = 17.
+
+
+2.
+Dado un arreglo de enteros, encuentra el mayor elemento y devuelve su indice.
+
+Ejemplo
+
+Para el arreglo = [3, 6, -2, -5, 7, 3] el resultado debe ser 4
+
+3.
+Dado un String, verificar si es un palindromo.
+
+Ejemplo
+
+Para el String = "aabaa", el resultado deberia ser
+checkPalindrome(inputString) = true;
+Para el String = "abac", el resultado deberia ser 
+checkPalindrome(inputString) = false;
+Para el String = "a", el resultado deberia ser
+checkPalindrome(inputString) = true.
+
+
+Bonus.
+Dado un arreglo de enteros encuentra el numero repetido, considerando q siempre va a haber un numero repetido y q solo sera uno.
+
+[3, 6, -2, -5, 7, 3] el resultado = 3
+
+
+4.
+Dado un arreglo de enteros, encuentra el par de elementos adyacentes que tengan el producto mas grande y retorna la suma de ambos
+
+Ejemplo
+
+Para el arreglo = [3, 6, -2, -5, 7, 3], el resultado es 
+adjacentElementsProduct(inputArray) = 10.
+
+7 * 3 generan el producto mas grande.
+
+
+5.
+Los tickets de loteria usualmente consisten en un numero par de digitos. Se dice que un ticket es suertudo si la suma de la mitad de sus digitos es igual a la suma de la segunda mitad.
+
+Dado el numero de un ticket n, determinar si es un ticket suertudo o no.
+
+Ejemplo
+
+Para n = 1230, la respuesta es
+isLucky(n) = true;
+Para n = 239017, la respuesta es 
+isLucky(n) = false.
