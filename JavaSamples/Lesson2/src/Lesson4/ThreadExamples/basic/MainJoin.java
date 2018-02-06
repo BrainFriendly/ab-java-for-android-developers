@@ -11,38 +11,40 @@ public class MainJoin {
 
     public static void main(String[] args) {
         System.out.println("Join Threads ");
-        List<SampleThread> threads= new ArrayList<>();
+        List<SampleThread> threads = new ArrayList<>();
 
         for (int i = 0; i < 3; i++) {
-            SampleThread sampleThread= new SampleThread();
+            SampleThread sampleThread = new SampleThread();
             threads.add(sampleThread);
             try {
                 sampleThread.join();
             } catch (InterruptedException e) {
+                System.out.println("fallo");
                 e.printStackTrace();
             }
 
         }
 
-        for (SampleThread thread:threads) {
+        for (SampleThread thread : threads) {
             thread.start();
         }
 
 
     }
 
-    public static class SampleThread extends Thread{
+    public static class SampleThread extends Thread {
 
         @Override
         public void run() {
             super.run();
 
-            for (int i = 0; i <10 ; i++) {
-                try{
+            for (int i = 0; i < 10; i++) {
+                try {
                     Thread.sleep(10);
-                }catch (Exception e){}
+                } catch (Exception e) {
+                }
             }
-            System.out.println("thread "+getName());
+            System.out.println("thread " + getName());
         }
     }
 

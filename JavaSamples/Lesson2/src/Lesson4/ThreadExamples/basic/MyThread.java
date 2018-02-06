@@ -11,7 +11,7 @@ public class MyThread extends Thread {
     public void run() {
         super.run();
         while(running){
-            System.out.println("Hello thread...");
+            System.out.println("Put your username...");
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
@@ -22,6 +22,6 @@ public class MyThread extends Thread {
 
     public void shutdown(){
         running=false;
-        System.out.println("Bye thread...");
+        System.out.println("Bye bye...");
     }
 }

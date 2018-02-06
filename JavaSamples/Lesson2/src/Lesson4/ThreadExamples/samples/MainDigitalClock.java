@@ -6,17 +6,17 @@ import java.util.Date;
 /**
  * Created by eduardomedina on 11/01/17.
  */
-public class MainDigitalClock extends java.applet.Applet implements Runnable{
+public class MainDigitalClock extends java.applet.Applet implements Runnable {
 
-    Font font= new Font("TimesRoman", Font.BOLD,24);
+    Font font = new Font("TimesRoman", Font.BOLD, 24);
     Date time;
     Thread runner;
 
     @Override
     public void start() {
         super.start();
-        if(runner==null){
-            runner= new Thread(this);
+        if (runner == null) {
+            runner = new Thread(this);
             runner.start();
         }
     }
@@ -25,19 +25,19 @@ public class MainDigitalClock extends java.applet.Applet implements Runnable{
     public void stop() {
         super.stop();
 
-        if(runner!=null){
+        if (runner != null) {
             runner.stop();
-            runner=null;
+            runner = null;
         }
     }
 
     @Override
     public void run() {
-        while (true){
-            time= new Date();
+        while (true) {
+            time = new Date();
             repaint();
             try {
-                Thread.sleep(1000);
+                Thread.sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -48,6 +48,6 @@ public class MainDigitalClock extends java.applet.Applet implements Runnable{
     public void paint(Graphics g) {
         super.paint(g);
         g.setFont(font);
-        g.drawString(time.toString(),10,50);
+        g.drawString(time.toString(), 10, 50);
     }
 }

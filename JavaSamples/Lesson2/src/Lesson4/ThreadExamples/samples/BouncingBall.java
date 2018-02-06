@@ -10,12 +10,12 @@ public class BouncingBall extends JFrame {
 
     private static final int CANVAS_WIDTH = 640;
     private static final int CANVAS_HEIGHT = 480;
-    private static final int UPDATE_INTERVAL = 50;
+    private static final int UPDATE_INTERVAL = 500;
 
     private int x = 100;
     private int y = 100;
     private int size = 100;
-    private int xSpeed = 3;
+    private int xSpeed = 1;
     private int ySpeed = 5;
 
     private DrawCanvas canvas;
@@ -28,7 +28,6 @@ public class BouncingBall extends JFrame {
         this.pack();
         this.setTitle("Bouncing Ball");
         this.setVisible(true);
-
 
         Thread updateThread = new Thread() {
             @Override
@@ -62,9 +61,9 @@ public class BouncingBall extends JFrame {
         @Override
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
-            setBackground(Color.BLACK);
+            setBackground(Color.WHITE);
             g.setColor(Color.BLUE);
-            g.fillOval(x, y, size, size);
+            g.fillOval(x, y, size, size*2);
         }
     }
 }

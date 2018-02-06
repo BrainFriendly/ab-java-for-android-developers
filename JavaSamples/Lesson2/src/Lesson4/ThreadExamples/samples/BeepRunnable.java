@@ -17,8 +17,8 @@ public class BeepRunnable implements Runnable {
     public void run() {
 
         for (int i = 0; i <3 ; i++) {
-            toolkit.beep();
             System.out.println("Beep!");
+            toolkit.beep();
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {

@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class MainTask {
 
-    private static final int TIME = 1000;//5000;
+    private static final int TIME = 5000;
 
     public static void main(String[] args) {
         System.out.println("Thread Task ");
