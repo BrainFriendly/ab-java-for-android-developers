@@ -47,7 +47,7 @@ adjacentElementsProduct(inputArray) = 10.
 
 
 5.
-Los tickets de loteria usualmente consisten en un numero par de digitos. Se dice que un ticket es suertudo si la suma de la mitad de sus digitos es igual a la suma de la segunda mitad.
+Los tickets de loteria usualmente consisten en un numero par de digitos. Se dice que un ticket es suertudo si la suma de la primera mitad de sus digitos es igual a la suma de la segunda mitad.
 
 Dado el numero de un ticket n, determinar si es un ticket suertudo o no.
 
@@ -57,3 +57,27 @@ Para n = 1230, la respuesta es
 isLucky(n) = true;
 Para n = 239017, la respuesta es 
 isLucky(n) = false.
+
+6.
+Secuencia de Fibonacci (sec y rec)
+
+Obtener el valor n de la sucesion de fibonnaci
+
+Ejemplo
+
+Sucesion: 0 1 1 2 3 5 8 13 21 34 55
+fib(8) =  21
+
+7.
+Encontrar un numero x en un arreglo de numeros ordenados y devolver su indice.
+
+Ejemplo
+
+Para el arreglo a=[11,15,18,20,30,50,117,118,219,320]
+find(219)=8
+
+8.
+
+
+
+
